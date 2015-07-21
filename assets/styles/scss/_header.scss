@@ -63,8 +63,9 @@
 	// image
 	// --------------------
 
+
 	.image {
-		@include tinted-background-image("/assets/images/header-large.jpg");
+		@include tinted-background-image("https://rawgit.com/BideoWego/viking-ecommerce-layout/master/assets/images/header-large.jpg");
 		margin-top: 82px;
 		height: 128px * 4;
 		background-size: cover;
@@ -90,7 +91,7 @@
 
 	@media only screen and (max-width: 768px) {
 		.image {
-			@include tinted-background-image("/assets/images/header-small.jpg");
+			@include tinted-background-image("https://rawgit.com/BideoWego/viking-ecommerce-layout/master/assets/images/header-small.jpg");
 			margin-top: 0;
 			background-position: center bottom;
 
