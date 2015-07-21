@@ -6,7 +6,7 @@ Responsive, SASS, and Font Awesome icons.
 
 An assignment from [Viking Code School][vikingcodeschool].
 
-[View Example][view]
+[View finish layout on RawGit][view]
 
 [view]: https://rawgit.com/BideoWego/viking-ecommerce-layout/master/index.html
 
