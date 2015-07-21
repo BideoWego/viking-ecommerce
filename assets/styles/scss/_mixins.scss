@@ -1,0 +1,131 @@
+// mixins
+
+// --------------------
+// clearfix
+// --------------------
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: '';
+}
+.clearfix:after {
+	clear: both;
+}
+@mixin clearfix() {
+	@extend .clearfix;
+}
+
+// --------------------
+// container
+// --------------------
+
+.container {
+	@include clearfix;
+	width: 100%;
+}
+@mixin container() {
+	@extend .container;
+}
+
+// --------------------
+// floats
+// --------------------
+
+.left {
+	float: left;
+}
+@mixin left() {
+	@extend .left;
+}
+
+.right {
+	float: right;
+}
+@mixin right() {
+	@extend .right;
+}
+
+// --------------------
+// tinted background image
+// --------------------
+
+@mixin tinted-background-image($url) {
+	 background:
+	 		linear-gradient(
+		      rgba(0, 0, 0, 0.75), 
+		      rgba(36, 36, 36, 0.75)
+		    ),
+		    url(#{$url})
+		    ;
+}
+
+// --------------------
+// center block
+// --------------------
+
+.center-block {
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin center-block() {
+	@extend .center-block;
+}
+
+@mixin transform($value) {
+	-ms-transform: $value; /* IE 9 */
+    -webkit-transform: $value; /* Chrome, Safari, Opera */
+    transform: $value;
+}
+
+// --------------------
+// box shadow
+// --------------------
+
+@mixin box-shadow($value) {
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	box-shadow: $value;
+}
+
+// --------------------
+// btn
+// --------------------
+
+.btn {
+	@include box-shadow(2px 2px lighten($dark, 20%));
+	display: inline-block;
+	border: none;
+	border-radius: 2px;
+	padding: 8px;
+
+	background: lighten($dark, 50%);
+	&:hover,
+	&:active {
+		background: lighten($dark, 60%);
+	}
+}
+@mixin btn() {
+	@extend .btn;
+}
+
+.btn-primary {
+	@include btn;
+	background: $primary;
+	color: $dark;
+
+	&:hover,
+	&:active {
+		background: lighten($primary, 10%);
+	}
+}
+@mixin btn-primary() {
+	@extend .btn-primary;
+}
+
+
+
+
+
+
+

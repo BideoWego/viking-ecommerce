@@ -1,0 +1,56 @@
+// footer
+
+// --------------------
+// footer
+// --------------------
+
+.footer {
+	background: $dark;
+	border-top: 2px solid $primary;
+	margin-top: 32px;
+	padding-top: 2em;
+	padding-bottom: 2em;
+
+	.title,
+	.contact {
+		@include container;
+		@include center-block;
+		max-width: 256px;
+		text-align: center;
+	}
+
+	// --------------------
+	// title
+	// --------------------
+
+	.title {
+		color: $primary;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	// --------------------
+	// contact
+	// --------------------
+
+	.contact {
+		.info {
+			margin-bottom: 1em;
+
+			a {
+				color: $light;
+				text-decoration: none;
+				vertical-align: super;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			i {
+				color: $primary;
+				font-size: 24px;
+			}
+		}
+	}
+}

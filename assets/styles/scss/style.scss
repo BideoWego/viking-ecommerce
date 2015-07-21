@@ -1,0 +1,30 @@
+/*
+	style
+*/
+
+// --------------------
+// imports
+// --------------------
+
+@import '../reset/reset';
+@import '../reset/normalize';
+
+@import 'colors';
+@import 'mixins';
+
+@import 'header';
+@import 'content';
+@import 'footer';
+
+// --------------------
+// top level elements
+// --------------------
+
+html,
+body,
+.wrap,
+.header,
+.content,
+.footer {
+	@include container;
+}
