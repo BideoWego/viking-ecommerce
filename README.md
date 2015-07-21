@@ -8,6 +8,6 @@ An assignment from [Viking Code School][vikingcodeschool].
 
 [View finish layout on RawGit][view]
 
-[view]: https://rawgit.com/BideoWego/viking-ecommerce-layout/master/index.html
+[view]: https://cdn.rawgit.com/BideoWego/viking-ecommerce-layout/master/index.html
 
 [vikingcodeschool]: http://vikingcodeschool.com
