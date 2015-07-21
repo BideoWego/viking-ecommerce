@@ -620,7 +620,10 @@ body,
     .content .products .product {
       float: none;
       max-width: 256px;
-      margin: 0 auto 64px auto; } }
+      margin: 0 auto 64px auto; }
+      .content .products .product .image img {
+        max-width: 232px;
+        height: auto; } }
 .content .pagination {
   max-width: 640px;
   text-align: center; }

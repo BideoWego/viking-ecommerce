@@ -115,6 +115,11 @@
 				float: none;
 				max-width: 256px;
 				margin: 0 auto 64px auto;
+
+				.image img {
+					max-width: 232px;
+					height: auto;
+				}
 			}
 		}
 	}
